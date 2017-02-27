@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AABEC8741E64218F0087A45E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEC8731E64218F0087A45E /* AppDelegate.swift */; };
+		AABEC8761E64218F0087A45E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEC8751E64218F0087A45E /* ViewController.swift */; };
+		AABEC8791E64218F0087A45E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8771E64218F0087A45E /* Main.storyboard */; };
+		AABEC87B1E64218F0087A45E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABEC87A1E64218F0087A45E /* Assets.xcassets */; };
+		AABEC87E1E64218F0087A45E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABEC87C1E64218F0087A45E /* LaunchScreen.storyboard */; };
+		AABEC8891E64218F0087A45E /* XZPlayBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEC8881E64218F0087A45E /* XZPlayBallTests.swift */; };
+		AABEC8941E64218F0087A45E /* XZPlayBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABEC8931E64218F0087A45E /* XZPlayBallUITests.swift */; };
+		AABEC8AA1E6421DB0087A45E /* background3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A21E6421DB0087A45E /* background3.mp3 */; };
+		AABEC8AB1E6421DB0087A45E /* button_pressed.wav in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A31E6421DB0087A45E /* button_pressed.wav */; };
+		AABEC8AC1E6421DB0087A45E /* completed.wav in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A41E6421DB0087A45E /* completed.wav */; };
+		AABEC8AD1E6421DB0087A45E /* game_over.wav in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A51E6421DB0087A45E /* game_over.wav */; };
+		AABEC8AE1E6421DB0087A45E /* kick_edge.wav in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A61E6421DB0087A45E /* kick_edge.wav */; };
+		AABEC8AF1E6421DB0087A45E /* lose_the_ball.wav in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A71E6421DB0087A45E /* lose_the_ball.wav */; };
+		AABEC8B01E6421DB0087A45E /* sound_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A81E6421DB0087A45E /* sound_1.wav */; };
+		AABEC8B11E6421DB0087A45E /* unbreakable.wav in Resources */ = {isa = PBXBuildFile; fileRef = AABEC8A91E6421DB0087A45E /* unbreakable.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AABEC8851E64218F0087A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AABEC8681E64218F0087A45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AABEC86F1E64218F0087A45E;
+			remoteInfo = XZPlayBall;
+		};
+		AABEC8901E64218F0087A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AABEC8681E64218F0087A45E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AABEC86F1E64218F0087A45E;
+			remoteInfo = XZPlayBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AABEC8701E64218F0087A45E /* XZPlayBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZPlayBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABEC8731E64218F0087A45E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AABEC8751E64218F0087A45E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AABEC8781E64218F0087A45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AABEC87A1E64218F0087A45E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AABEC87D1E64218F0087A45E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AABEC87F1E64218F0087A45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABEC8841E64218F0087A45E /* XZPlayBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZPlayBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABEC8881E64218F0087A45E /* XZPlayBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZPlayBallTests.swift; sourceTree = "<group>"; };
+		AABEC88A1E64218F0087A45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABEC88F1E64218F0087A45E /* XZPlayBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZPlayBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABEC8931E64218F0087A45E /* XZPlayBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZPlayBallUITests.swift; sourceTree = "<group>"; };
+		AABEC8951E64218F0087A45E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABEC8A21E6421DB0087A45E /* background3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background3.mp3; sourceTree = "<group>"; };
+		AABEC8A31E6421DB0087A45E /* button_pressed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_pressed.wav; sourceTree = "<group>"; };
+		AABEC8A41E6421DB0087A45E /* completed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = completed.wav; sourceTree = "<group>"; };
+		AABEC8A51E6421DB0087A45E /* game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_over.wav; sourceTree = "<group>"; };
+		AABEC8A61E6421DB0087A45E /* kick_edge.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick_edge.wav; sourceTree = "<group>"; };
+		AABEC8A71E6421DB0087A45E /* lose_the_ball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose_the_ball.wav; sourceTree = "<group>"; };
+		AABEC8A81E6421DB0087A45E /* sound_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_1.wav; sourceTree = "<group>"; };
+		AABEC8A91E6421DB0087A45E /* unbreakable.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = unbreakable.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AABEC86D1E64218F0087A45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABEC8811E64218F0087A45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABEC88C1E64218F0087A45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AABEC8671E64218F0087A45E = {
+			isa = PBXGroup;
+			children = (
+				AABEC8721E64218F0087A45E /* XZPlayBall */,
+				AABEC8871E64218F0087A45E /* XZPlayBallTests */,
+				AABEC8921E64218F0087A45E /* XZPlayBallUITests */,
+				AABEC8711E64218F0087A45E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AABEC8711E64218F0087A45E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AABEC8701E64218F0087A45E /* XZPlayBall.app */,
+				AABEC8841E64218F0087A45E /* XZPlayBallTests.xctest */,
+				AABEC88F1E64218F0087A45E /* XZPlayBallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AABEC8721E64218F0087A45E /* XZPlayBall */ = {
+			isa = PBXGroup;
+			children = (
+				AABEC8A11E6421DB0087A45E /* soundmusic */,
+				AABEC8731E64218F0087A45E /* AppDelegate.swift */,
+				AABEC8751E64218F0087A45E /* ViewController.swift */,
+				AABEC8771E64218F0087A45E /* Main.storyboard */,
+				AABEC87A1E64218F0087A45E /* Assets.xcassets */,
+				AABEC87C1E64218F0087A45E /* LaunchScreen.storyboard */,
+				AABEC87F1E64218F0087A45E /* Info.plist */,
+			);
+			path = XZPlayBall;
+			sourceTree = "<group>";
+		};
+		AABEC8871E64218F0087A45E /* XZPlayBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				AABEC8881E64218F0087A45E /* XZPlayBallTests.swift */,
+				AABEC88A1E64218F0087A45E /* Info.plist */,
+			);
+			path = XZPlayBallTests;
+			sourceTree = "<group>";
+		};
+		AABEC8921E64218F0087A45E /* XZPlayBallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AABEC8931E64218F0087A45E /* XZPlayBallUITests.swift */,
+				AABEC8951E64218F0087A45E /* Info.plist */,
+			);
+			path = XZPlayBallUITests;
+			sourceTree = "<group>";
+		};
+		AABEC8A11E6421DB0087A45E /* soundmusic */ = {
+			isa = PBXGroup;
+			children = (
+				AABEC8A21E6421DB0087A45E /* background3.mp3 */,
+				AABEC8A31E6421DB0087A45E /* button_pressed.wav */,
+				AABEC8A41E6421DB0087A45E /* completed.wav */,
+				AABEC8A51E6421DB0087A45E /* game_over.wav */,
+				AABEC8A61E6421DB0087A45E /* kick_edge.wav */,
+				AABEC8A71E6421DB0087A45E /* lose_the_ball.wav */,
+				AABEC8A81E6421DB0087A45E /* sound_1.wav */,
+				AABEC8A91E6421DB0087A45E /* unbreakable.wav */,
+			);
+			path = soundmusic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AABEC86F1E64218F0087A45E /* XZPlayBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABEC8981E64218F0087A45E /* Build configuration list for PBXNativeTarget "XZPlayBall" */;
+			buildPhases = (
+				AABEC86C1E64218F0087A45E /* Sources */,
+				AABEC86D1E64218F0087A45E /* Frameworks */,
+				AABEC86E1E64218F0087A45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XZPlayBall;
+			productName = XZPlayBall;
+			productReference = AABEC8701E64218F0087A45E /* XZPlayBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AABEC8831E64218F0087A45E /* XZPlayBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABEC89B1E64218F0087A45E /* Build configuration list for PBXNativeTarget "XZPlayBallTests" */;
+			buildPhases = (
+				AABEC8801E64218F0087A45E /* Sources */,
+				AABEC8811E64218F0087A45E /* Frameworks */,
+				AABEC8821E64218F0087A45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AABEC8861E64218F0087A45E /* PBXTargetDependency */,
+			);
+			name = XZPlayBallTests;
+			productName = XZPlayBallTests;
+			productReference = AABEC8841E64218F0087A45E /* XZPlayBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AABEC88E1E64218F0087A45E /* XZPlayBallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABEC89E1E64218F0087A45E /* Build configuration list for PBXNativeTarget "XZPlayBallUITests" */;
+			buildPhases = (
+				AABEC88B1E64218F0087A45E /* Sources */,
+				AABEC88C1E64218F0087A45E /* Frameworks */,
+				AABEC88D1E64218F0087A45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AABEC8911E64218F0087A45E /* PBXTargetDependency */,
+			);
+			name = XZPlayBallUITests;
+			productName = XZPlayBallUITests;
+			productReference = AABEC88F1E64218F0087A45E /* XZPlayBallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AABEC8681E64218F0087A45E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xiyang;
+				TargetAttributes = {
+					AABEC86F1E64218F0087A45E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3MZD3465LC;
+						ProvisioningStyle = Automatic;
+					};
+					AABEC8831E64218F0087A45E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3MZD3465LC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AABEC86F1E64218F0087A45E;
+					};
+					AABEC88E1E64218F0087A45E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3MZD3465LC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AABEC86F1E64218F0087A45E;
+					};
+				};
+			};
+			buildConfigurationList = AABEC86B1E64218F0087A45E /* Build configuration list for PBXProject "XZPlayBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AABEC8671E64218F0087A45E;
+			productRefGroup = AABEC8711E64218F0087A45E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AABEC86F1E64218F0087A45E /* XZPlayBall */,
+				AABEC8831E64218F0087A45E /* XZPlayBallTests */,
+				AABEC88E1E64218F0087A45E /* XZPlayBallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AABEC86E1E64218F0087A45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABEC8AC1E6421DB0087A45E /* completed.wav in Resources */,
+				AABEC8AA1E6421DB0087A45E /* background3.mp3 in Resources */,
+				AABEC8AD1E6421DB0087A45E /* game_over.wav in Resources */,
+				AABEC8AF1E6421DB0087A45E /* lose_the_ball.wav in Resources */,
+				AABEC8B01E6421DB0087A45E /* sound_1.wav in Resources */,
+				AABEC87E1E64218F0087A45E /* LaunchScreen.storyboard in Resources */,
+				AABEC8B11E6421DB0087A45E /* unbreakable.wav in Resources */,
+				AABEC8AB1E6421DB0087A45E /* button_pressed.wav in Resources */,
+				AABEC87B1E64218F0087A45E /* Assets.xcassets in Resources */,
+				AABEC8791E64218F0087A45E /* Main.storyboard in Resources */,
+				AABEC8AE1E6421DB0087A45E /* kick_edge.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABEC8821E64218F0087A45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABEC88D1E64218F0087A45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AABEC86C1E64218F0087A45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABEC8761E64218F0087A45E /* ViewController.swift in Sources */,
+				AABEC8741E64218F0087A45E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABEC8801E64218F0087A45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABEC8891E64218F0087A45E /* XZPlayBallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABEC88B1E64218F0087A45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABEC8941E64218F0087A45E /* XZPlayBallUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AABEC8861E64218F0087A45E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AABEC86F1E64218F0087A45E /* XZPlayBall */;
+			targetProxy = AABEC8851E64218F0087A45E /* PBXContainerItemProxy */;
+		};
+		AABEC8911E64218F0087A45E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AABEC86F1E64218F0087A45E /* XZPlayBall */;
+			targetProxy = AABEC8901E64218F0087A45E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AABEC8771E64218F0087A45E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AABEC8781E64218F0087A45E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AABEC87C1E64218F0087A45E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AABEC87D1E64218F0087A45E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AABEC8961E64218F0087A45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AABEC8971E64218F0087A45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AABEC8991E64218F0087A45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3MZD3465LC;
+				INFOPLIST_FILE = XZPlayBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.XZPlayBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AABEC89A1E64218F0087A45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3MZD3465LC;
+				INFOPLIST_FILE = XZPlayBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.XZPlayBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AABEC89C1E64218F0087A45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3MZD3465LC;
+				INFOPLIST_FILE = XZPlayBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.XZPlayBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZPlayBall.app/XZPlayBall";
+			};
+			name = Debug;
+		};
+		AABEC89D1E64218F0087A45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3MZD3465LC;
+				INFOPLIST_FILE = XZPlayBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.XZPlayBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XZPlayBall.app/XZPlayBall";
+			};
+			name = Release;
+		};
+		AABEC89F1E64218F0087A45E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3MZD3465LC;
+				INFOPLIST_FILE = XZPlayBallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.XZPlayBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XZPlayBall;
+			};
+			name = Debug;
+		};
+		AABEC8A01E64218F0087A45E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3MZD3465LC;
+				INFOPLIST_FILE = XZPlayBallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nongji360.XZPlayBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XZPlayBall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AABEC86B1E64218F0087A45E /* Build configuration list for PBXProject "XZPlayBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABEC8961E64218F0087A45E /* Debug */,
+				AABEC8971E64218F0087A45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AABEC8981E64218F0087A45E /* Build configuration list for PBXNativeTarget "XZPlayBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABEC8991E64218F0087A45E /* Debug */,
+				AABEC89A1E64218F0087A45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AABEC89B1E64218F0087A45E /* Build configuration list for PBXNativeTarget "XZPlayBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABEC89C1E64218F0087A45E /* Debug */,
+				AABEC89D1E64218F0087A45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AABEC89E1E64218F0087A45E /* Build configuration list for PBXNativeTarget "XZPlayBallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABEC89F1E64218F0087A45E /* Debug */,
+				AABEC8A01E64218F0087A45E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AABEC8681E64218F0087A45E /* Project object */;
+}
