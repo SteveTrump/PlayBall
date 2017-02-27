@@ -1,26 +1,299 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="9eS-LC-niG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paddle" id="Fi8-Bi-Odg">
+                                <rect key="frame" x="140" y="555" width="94" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball " id="xcB-XS-6fO">
+                                <rect key="frame" x="172" y="514" width="29" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="pLE-y6-cXe" userLabel="myImageView">
+                                <rect key="frame" x="16" y="88" width="343" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="GBI-St-Yw4" userLabel="purple1">
+                                        <rect key="frame" x="0.0" y="0.0" width="29" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="EIn-Nd-3Mg" userLabel="purple2">
+                                        <rect key="frame" x="28" y="22" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="4yK-Ap-EMs" userLabel="purple3">
+                                        <rect key="frame" x="57" y="44" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="cew-Yc-QnO" userLabel="purple4">
+                                        <rect key="frame" x="86" y="66" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="p1d-nh-7ck" userLabel="purple5">
+                                        <rect key="frame" x="114" y="91" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="80V-8Y-AlY" userLabel="purple6">
+                                        <rect key="frame" x="142" y="115" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="Qcr-i8-EC1" userLabel="purple7">
+                                        <rect key="frame" x="169" y="139" width="30" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="wmb-Tj-UOj" userLabel="purple8">
+                                        <rect key="frame" x="196" y="161" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="ez7-PI-WhH" userLabel="purple9">
+                                        <rect key="frame" x="224" y="183" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="m7a-90-gIF" userLabel="purple10">
+                                        <rect key="frame" x="252" y="205" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="w4S-ou-V5c" userLabel="purple11">
+                                        <rect key="frame" x="280" y="228" width="30" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple" id="Yo2-xx-KdH" userLabel="purple12">
+                                        <rect key="frame" x="313" y="250" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="AXD-e7-HOA" userLabel="green1">
+                                        <rect key="frame" x="0.0" y="44" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="xyN-w6-yCE" userLabel="green2">
+                                        <rect key="frame" x="28" y="66" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="hme-fg-Xoy" userLabel="green3">
+                                        <rect key="frame" x="57" y="91" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="ZJC-U1-coY" userLabel="green4">
+                                        <rect key="frame" x="86" y="115" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="wAh-nP-1qr" userLabel="green5">
+                                        <rect key="frame" x="114" y="139" width="29" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="L3L-Xd-Sg0" userLabel="green6">
+                                        <rect key="frame" x="142" y="161" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="En0-H8-rQD" userLabel="green7">
+                                        <rect key="frame" x="169" y="183" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="VWc-61-Z4V" userLabel="green8">
+                                        <rect key="frame" x="196" y="205" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="3p0-rO-n0T" userLabel="green9">
+                                        <rect key="frame" x="224" y="228" width="30" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" id="JrB-eH-xfX" userLabel="green10">
+                                        <rect key="frame" x="252" y="250" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="AAF-N8-Yso" userLabel="rose1">
+                                        <rect key="frame" x="0.0" y="91" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="2fq-yg-RTf" userLabel="rose2">
+                                        <rect key="frame" x="28" y="115" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="BAx-X8-cQ6" userLabel="rose3">
+                                        <rect key="frame" x="57" y="139" width="29" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="bXg-ku-sQL" userLabel="rose4">
+                                        <rect key="frame" x="86" y="161" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="fdx-9p-JZq" userLabel="rose5">
+                                        <rect key="frame" x="114" y="183" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="RVD-Va-zyD" userLabel="rose6">
+                                        <rect key="frame" x="142" y="205" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="RNv-DQ-ghO" userLabel="rose7">
+                                        <rect key="frame" x="169" y="228" width="30" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rose" id="7az-Nx-PeG" userLabel="rose8">
+                                        <rect key="frame" x="196" y="250" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paleblue" id="YbL-br-4jY" userLabel="paleblue1">
+                                        <rect key="frame" x="0.0" y="139" width="29" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paleblue" id="Gx3-7k-aJR" userLabel="paleblue2">
+                                        <rect key="frame" x="28" y="161" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paleblue" id="UFt-eu-Alr" userLabel="paleblue3">
+                                        <rect key="frame" x="57" y="183" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paleblue" id="4cC-86-wWm" userLabel="paleblue4">
+                                        <rect key="frame" x="86" y="205" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paleblue" id="OJq-rJ-VIn" userLabel="paleblue5">
+                                        <rect key="frame" x="114" y="228" width="29" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paleblue" id="82P-kh-ECb" userLabel="paleblue6">
+                                        <rect key="frame" x="142" y="250" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange" id="pSB-Kn-OtP" userLabel="orange1">
+                                        <rect key="frame" x="0.0" y="183" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange" id="qOI-kf-5D8" userLabel="orange2">
+                                        <rect key="frame" x="28" y="205" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange" id="FCR-zH-mKo" userLabel="orange3">
+                                        <rect key="frame" x="57" y="228" width="29" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange" id="m7B-Jf-yPD" userLabel="orange4">
+                                        <rect key="frame" x="86" y="250" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red" id="ZIk-dR-ZRq" userLabel="red1">
+                                        <rect key="frame" x="0.0" y="228" width="29" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red" id="N5j-IV-Pzn" userLabel="red2">
+                                        <rect key="frame" x="28" y="250" width="29" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="289-Ye-hpV" appends="YES" id="bLE-TO-356"/>
+                                    <outletCollection property="gestureRecognizers" destination="xhu-Pb-qfX" appends="YES" id="3gD-h6-21y"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击屏幕开始游戏！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bKk-zf-aAl">
+                                <rect key="frame" x="0.0" y="416" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="ballImageView" destination="xcB-XS-6fO" id="SA9-ZL-Fp8"/>
+                        <outlet property="gameImageView" destination="pLE-y6-cXe" id="tjW-Gz-eVu"/>
+                        <outlet property="paddleImageView" destination="Fi8-Bi-Odg" id="MfO-f3-DCH"/>
+                        <outlet property="tapGesture" destination="289-Ye-hpV" id="DCZ-vL-I3T"/>
+                        <outletCollection property="purpleImageView" destination="GBI-St-Yw4" collectionClass="NSMutableArray" id="Byw-jf-SbY"/>
+                        <outletCollection property="purpleImageView" destination="EIn-Nd-3Mg" collectionClass="NSMutableArray" id="9QB-XE-Ubz"/>
+                        <outletCollection property="purpleImageView" destination="4yK-Ap-EMs" collectionClass="NSMutableArray" id="EH3-Ym-Yn0"/>
+                        <outletCollection property="purpleImageView" destination="cew-Yc-QnO" collectionClass="NSMutableArray" id="buv-Zi-o9K"/>
+                        <outletCollection property="purpleImageView" destination="p1d-nh-7ck" collectionClass="NSMutableArray" id="x3L-DI-Kf7"/>
+                        <outletCollection property="purpleImageView" destination="80V-8Y-AlY" collectionClass="NSMutableArray" id="mMz-fs-Jdl"/>
+                        <outletCollection property="purpleImageView" destination="Qcr-i8-EC1" collectionClass="NSMutableArray" id="89j-bC-bu3"/>
+                        <outletCollection property="purpleImageView" destination="wmb-Tj-UOj" collectionClass="NSMutableArray" id="0E9-8H-owU"/>
+                        <outletCollection property="purpleImageView" destination="ez7-PI-WhH" collectionClass="NSMutableArray" id="Jag-Fm-tb2"/>
+                        <outletCollection property="purpleImageView" destination="m7a-90-gIF" collectionClass="NSMutableArray" id="hHH-gi-cny"/>
+                        <outletCollection property="purpleImageView" destination="w4S-ou-V5c" collectionClass="NSMutableArray" id="7Wy-Ep-8bq"/>
+                        <outletCollection property="purpleImageView" destination="Yo2-xx-KdH" collectionClass="NSMutableArray" id="L4v-4i-H3M"/>
+                        <outletCollection property="greenImageView" destination="AXD-e7-HOA" collectionClass="NSMutableArray" id="akA-KE-QOl"/>
+                        <outletCollection property="greenImageView" destination="xyN-w6-yCE" collectionClass="NSMutableArray" id="HUt-O7-L6E"/>
+                        <outletCollection property="greenImageView" destination="hme-fg-Xoy" collectionClass="NSMutableArray" id="R9K-uB-LTf"/>
+                        <outletCollection property="greenImageView" destination="ZJC-U1-coY" collectionClass="NSMutableArray" id="LId-6A-MVB"/>
+                        <outletCollection property="greenImageView" destination="wAh-nP-1qr" collectionClass="NSMutableArray" id="ZOy-ZI-3tn"/>
+                        <outletCollection property="greenImageView" destination="L3L-Xd-Sg0" collectionClass="NSMutableArray" id="8qY-D2-EGK"/>
+                        <outletCollection property="greenImageView" destination="En0-H8-rQD" collectionClass="NSMutableArray" id="t77-Do-t2h"/>
+                        <outletCollection property="greenImageView" destination="VWc-61-Z4V" collectionClass="NSMutableArray" id="xw5-xJ-cPK"/>
+                        <outletCollection property="greenImageView" destination="3p0-rO-n0T" collectionClass="NSMutableArray" id="SUl-KG-ciY"/>
+                        <outletCollection property="greenImageView" destination="JrB-eH-xfX" collectionClass="NSMutableArray" id="xgm-gT-36s"/>
+                        <outletCollection property="roseImageView" destination="AAF-N8-Yso" collectionClass="NSMutableArray" id="h7e-ht-TEq"/>
+                        <outletCollection property="roseImageView" destination="2fq-yg-RTf" collectionClass="NSMutableArray" id="CD2-Pf-PcO"/>
+                        <outletCollection property="roseImageView" destination="BAx-X8-cQ6" collectionClass="NSMutableArray" id="Ref-3r-peS"/>
+                        <outletCollection property="roseImageView" destination="bXg-ku-sQL" collectionClass="NSMutableArray" id="s80-ID-K78"/>
+                        <outletCollection property="roseImageView" destination="fdx-9p-JZq" collectionClass="NSMutableArray" id="fX7-NN-CaW"/>
+                        <outletCollection property="roseImageView" destination="RVD-Va-zyD" collectionClass="NSMutableArray" id="8xN-r1-qgm"/>
+                        <outletCollection property="roseImageView" destination="RNv-DQ-ghO" collectionClass="NSMutableArray" id="gG2-lU-CiZ"/>
+                        <outletCollection property="roseImageView" destination="7az-Nx-PeG" collectionClass="NSMutableArray" id="3B2-mU-NOJ"/>
+                        <outletCollection property="paleblueImageView" destination="YbL-br-4jY" collectionClass="NSMutableArray" id="dUn-Rq-fvC"/>
+                        <outletCollection property="paleblueImageView" destination="Gx3-7k-aJR" collectionClass="NSMutableArray" id="x5h-kF-fPy"/>
+                        <outletCollection property="paleblueImageView" destination="UFt-eu-Alr" collectionClass="NSMutableArray" id="JSW-CY-nJh"/>
+                        <outletCollection property="paleblueImageView" destination="4cC-86-wWm" collectionClass="NSMutableArray" id="meo-dO-iRA"/>
+                        <outletCollection property="paleblueImageView" destination="OJq-rJ-VIn" collectionClass="NSMutableArray" id="DEm-XO-e1o"/>
+                        <outletCollection property="paleblueImageView" destination="82P-kh-ECb" collectionClass="NSMutableArray" id="BgM-u5-6vv"/>
+                        <outletCollection property="orangeImageView" destination="pSB-Kn-OtP" collectionClass="NSMutableArray" id="6sF-Ti-6qH"/>
+                        <outletCollection property="orangeImageView" destination="qOI-kf-5D8" id="T8d-5U-ayJ"/>
+                        <outletCollection property="orangeImageView" destination="FCR-zH-mKo" id="sxp-nr-hBV"/>
+                        <outletCollection property="orangeImageView" destination="m7B-Jf-yPD" id="XPn-OX-P7z"/>
+                        <outletCollection property="redImageView" destination="ZIk-dR-ZRq" id="JEx-UO-5Q6"/>
+                        <outletCollection property="redImageView" destination="N5j-IV-Pzn" id="P1i-SS-1Ws"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="289-Ye-hpV"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xhu-Pb-qfX">
+                    <connections>
+                        <action selector="dragPaddle:" destination="vXZ-lx-hvc" id="TIV-oB-YQs"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="387.73333333333335" y="291.57333333333332"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="639" height="1136"/>
+        <image name="ball " width="30" height="26"/>
+        <image name="green" width="46" height="32"/>
+        <image name="orange" width="46" height="32"/>
+        <image name="paddle" width="147" height="45"/>
+        <image name="paleblue" width="46" height="32"/>
+        <image name="purple" width="43" height="24"/>
+        <image name="red" width="46" height="32"/>
+        <image name="rose" width="46" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
