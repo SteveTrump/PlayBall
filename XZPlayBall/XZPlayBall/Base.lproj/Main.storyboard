@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="XZPlayBall" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -20,6 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="9eS-LC-niG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paddle" id="Fi8-Bi-Odg">
                                 <rect key="frame" x="140" y="555" width="94" height="35"/>
@@ -205,8 +206,8 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="289-Ye-hpV" appends="YES" id="bLE-TO-356"/>
                                     <outletCollection property="gestureRecognizers" destination="xhu-Pb-qfX" appends="YES" id="3gD-h6-21y"/>
+                                    <outletCollection property="gestureRecognizers" destination="cVK-IO-tI0" appends="YES" id="Sik-DV-ccS"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击屏幕开始游戏！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bKk-zf-aAl">
@@ -224,7 +225,8 @@
                         <outlet property="ballImageView" destination="xcB-XS-6fO" id="SA9-ZL-Fp8"/>
                         <outlet property="gameImageView" destination="pLE-y6-cXe" id="tjW-Gz-eVu"/>
                         <outlet property="paddleImageView" destination="Fi8-Bi-Odg" id="MfO-f3-DCH"/>
-                        <outlet property="tapGesture" destination="289-Ye-hpV" id="DCZ-vL-I3T"/>
+                        <outlet property="tapGesture" destination="cVK-IO-tI0" id="Uqh-id-JgE"/>
+                        <outlet property="tipLabel" destination="bKk-zf-aAl" id="XjH-1l-aHS"/>
                         <outletCollection property="purpleImageView" destination="GBI-St-Yw4" collectionClass="NSMutableArray" id="Byw-jf-SbY"/>
                         <outletCollection property="purpleImageView" destination="EIn-Nd-3Mg" collectionClass="NSMutableArray" id="9QB-XE-Ubz"/>
                         <outletCollection property="purpleImageView" destination="4yK-Ap-EMs" collectionClass="NSMutableArray" id="EH3-Ym-Yn0"/>
@@ -262,20 +264,24 @@
                         <outletCollection property="paleblueImageView" destination="OJq-rJ-VIn" collectionClass="NSMutableArray" id="DEm-XO-e1o"/>
                         <outletCollection property="paleblueImageView" destination="82P-kh-ECb" collectionClass="NSMutableArray" id="BgM-u5-6vv"/>
                         <outletCollection property="orangeImageView" destination="pSB-Kn-OtP" collectionClass="NSMutableArray" id="6sF-Ti-6qH"/>
-                        <outletCollection property="orangeImageView" destination="qOI-kf-5D8" id="T8d-5U-ayJ"/>
-                        <outletCollection property="orangeImageView" destination="FCR-zH-mKo" id="sxp-nr-hBV"/>
-                        <outletCollection property="orangeImageView" destination="m7B-Jf-yPD" id="XPn-OX-P7z"/>
-                        <outletCollection property="redImageView" destination="ZIk-dR-ZRq" id="JEx-UO-5Q6"/>
-                        <outletCollection property="redImageView" destination="N5j-IV-Pzn" id="P1i-SS-1Ws"/>
+                        <outletCollection property="orangeImageView" destination="qOI-kf-5D8" collectionClass="NSMutableArray" id="T8d-5U-ayJ"/>
+                        <outletCollection property="orangeImageView" destination="FCR-zH-mKo" collectionClass="NSMutableArray" id="sxp-nr-hBV"/>
+                        <outletCollection property="orangeImageView" destination="m7B-Jf-yPD" collectionClass="NSMutableArray" id="XPn-OX-P7z"/>
+                        <outletCollection property="redImageView" destination="ZIk-dR-ZRq" collectionClass="NSMutableArray" id="JEx-UO-5Q6"/>
+                        <outletCollection property="redImageView" destination="N5j-IV-Pzn" collectionClass="NSMutableArray" id="P1i-SS-1Ws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="289-Ye-hpV"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="xhu-Pb-qfX">
                     <connections>
                         <action selector="dragPaddle:" destination="vXZ-lx-hvc" id="TIV-oB-YQs"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="cVK-IO-tI0">
+                    <connections>
+                        <action selector="tapScreen:" destination="vXZ-lx-hvc" id="lpu-ro-lu4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="387.73333333333335" y="291.57333333333332"/>
         </scene>
